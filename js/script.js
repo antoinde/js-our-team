@@ -30,3 +30,67 @@ Angela Lopez	Social Media Manager  angela-lopez-social-media-manager.jpg
 Scott Estrada	Developer	          scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	  barbara-ramos-graphic-designer.jpg
 */
+
+// -----------------------SVOLGIMENTO------------------------
+
+const array=[
+    {
+        nome: 'Wayne Barnett',
+        ruolo: 'Founder & CEO',
+        foto: 'wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        nome: 'Angela Caroll',
+        ruolo: 'Chief Editor',
+        foto: 'angela-caroll-chief-editor.jpg'
+    },
+    {
+        nome: 'Walter Gordon',
+        ruolo: 'Office Manager',
+        foto: 'walter-gordon-office-manager.jpg'
+    },
+    {
+        nome: 'Angela Lopez',
+        ruolo: 'Social Media Manager',
+        foto: 'angela-lopez-social-media-manager.jpg'
+    },
+    {
+        nome: 'Scott Estrada',
+        ruolo: 'Developer',
+        foto: 'scott-estrada-developer.jpg'
+    },
+    {
+        nome: 'Barbara Ramos',
+        ruolo: 'Graphic Designer',
+        foto: 'barbara-ramos-graphic-designer.jpg'
+    },
+    
+];
+//stampa di controllo
+console.log(array);
+
+// MILESTONE 1:
+
+// per ogni cella dell'array
+for(let indexArray=0; indexArray<array.length; indexArray++) {
+    //stampa il contenuto di ogni oggetto
+    for(let key in array[indexArray]){
+        console.log('[Chiave]: ', key);
+        console.log('[Valore]: ', array[indexArray][key]);
+    }
+}
+
+// MILESTONE 2:
+
+const containerMain = document.getElementById('main');
+containerMain.innerHTML = '';
+let element;
+
+// per ogni cella dell'array
+for(let indexArray=0; indexArray<array.length; indexArray++) {
+    //stampa il contenuto di ogni oggetto
+    for(let key in array[indexArray]){
+        element = `<div> <strong>[key]:</strong> ${key} <strong>[value]:</strong> ${array[indexArray][key]} </div>`;
+        containerMain.innerHTML += element;
+    }
+}

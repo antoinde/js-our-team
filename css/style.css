@@ -16,3 +16,18 @@ body {
 /* ***********UTILITIES************ */
 
 /* ***********CONTENT************ */
+.container{
+  height: 700px;
+  border: 8px solid black;
+}
+.title{
+  color: #fff;
+  border-bottom: 8px solid black;
+  font-size: 40px;
+  background-color: darkgoldenrod;
+  text-align: center;
+}
+.main{
+  background-color: grey;
+  height: calc(100% - 54px);
+}
