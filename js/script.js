@@ -96,6 +96,7 @@ const containerMain = document.getElementById('main');
 containerMain.innerHTML = '';
 let element;
 
+/*
 // per ogni cella dell'array
 for(let indexArray=0; indexArray<array.length; indexArray++) {
     //stampa il contenuto di ogni oggetto
@@ -103,4 +104,17 @@ for(let indexArray=0; indexArray<array.length; indexArray++) {
         element = `<div> <strong>[key]:</strong> ${key} <strong>[value]:</strong> ${array[indexArray][key]} </div>`;
         containerMain.innerHTML += element;
     }
+}
+*/
+
+//MILESTONE 2 + BONUS 1
+for(let indexArray=0; indexArray<array.length; indexArray++) {
+    const object = array[indexArray];
+    element = 
+    `<div>
+        <div>Nome = ${object.nome}</div>
+        <div>Ruolo = ${object.ruolo}</div>
+        <img src="img/${object.foto}"></img>
+     </div>`;
+     containerMain.innerHTML += element;
 }

@@ -17,7 +17,6 @@ body {
 
 /* ***********CONTENT************ */
 .container{
-  height: 700px;
   border: 8px solid black;
 }
 .title{
@@ -29,5 +28,4 @@ body {
 }
 .main{
   background-color: grey;
-  height: calc(100% - 54px);
 }
