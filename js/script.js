@@ -33,6 +33,7 @@ Barbara Ramos	Graphic Designer	  barbara-ramos-graphic-designer.jpg
 
 // -----------------------SVOLGIMENTO------------------------
 
+// MILESTONE 0
 const array=[
     {
         nome: 'Wayne Barnett',
@@ -71,6 +72,8 @@ console.log(array);
 
 // MILESTONE 1:
 
+// (metodo 1)
+/*
 // per ogni cella dell'array
 for(let indexArray=0; indexArray<array.length; indexArray++) {
     //stampa il contenuto di ogni oggetto
@@ -78,6 +81,13 @@ for(let indexArray=0; indexArray<array.length; indexArray++) {
         console.log('[Chiave]: ', key);
         console.log('[Valore]: ', array[indexArray][key]);
     }
+}
+*/
+// (metodo 2)
+for(let indexArray=0; indexArray<array.length; indexArray++) {
+    //stampa il contenuto di ogni oggetto
+    const team = array[indexArray];
+    console.log(`[nome]: ${team.nome} [ruolo]: ${team.ruolo} [foto]: ${team.foto}`);
 }
 
 // MILESTONE 2:
